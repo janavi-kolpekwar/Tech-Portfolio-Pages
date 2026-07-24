@@ -39,7 +39,6 @@ a:hover { color: var(--ink); }
 .ticker-set { display: flex; gap: 44px; padding: 0 22px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
 .ticker-set b { color: #8FBF9A; font-weight: 600; }
 @keyframes tickerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
 
 /* ---------- LEAD ---------- */
 .lead { max-width: var(--max); margin: 0 auto; padding: 44px 32px 52px; display: grid; grid-template-columns: 1.55fr 1fr; gap: 44px; }
@@ -56,7 +55,7 @@ a:hover { color: var(--ink); }
 .btn-dark { color: var(--paper); background: var(--ink); }
 .btn-dark:hover { background: var(--accent); border-color: var(--accent); color: var(--paper); }
 .lead-photo { margin: 0; }
-.lead-photo img { width: 100%; display: block; border: 1px solid var(--ink); }
+.lead-photo img { width: 100%; display: block; border: 1px solid var(--ink); filter: grayscale(1) contrast(1.06) brightness(1.03); }
 
 /* ---------- SECTION BANDS ---------- */
 .band { max-width: var(--max); margin: 0 auto; padding: 0 32px 56px; }
